@@ -14,5 +14,5 @@ export SPARK_HOME=$PKG_DIR/spark
 export MAVEN_HOEM=$PKG_DIR/mvn
 export PATH=$HOME/.local/bin:$HOME/bin:$JAVA_HOME/bin:$SPARK_HOME/bin:$PATH
 
-export LC_ALL=ko_KR.UTF-8
-export LANG=ko_KR.UTF-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
