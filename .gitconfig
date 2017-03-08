@@ -7,3 +7,5 @@
 	ui = auto
 [credential]
 	username = magarage0702@gmail.com
+[core]
+	editor = vim
