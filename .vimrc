@@ -42,6 +42,17 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'pangloss/vim-javascript'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,9 +67,15 @@ au BufNewFile,BufRead *.py set expandtab
 au BufNewFile,BufRead *.py set autoindent
 au BufNewFile,BufRead *.py set fileformat=unix
 
-au BufNewFile,BufRead *.js, *.html, *.css set tabstop=2
-au BufNewFile,BufRead *.js, *.html, *.css set softtabstop=2
-au BufNewFile,BufRead *.js, *.html, *.css set shiftwidth=2
+au BufNewFile,BufRead *.js set tabstop=2
+au BufNewFile,BufRead *.js set softtabstop=2
+au BufNewFile,BufRead *.js set shiftwidth=2
+au BufNewFile,BufRead *.html set tabstop=2
+au BufNewFile,BufRead *.html set softtabstop=2
+au BufNewFile,BufRead *.html set shiftwidth=2
+au BufNewFile,BufRead *.css set tabstop=2
+au BufNewFile,BufRead *.css set softtabstop=2
+au BufNewFile,BufRead *.css set shiftwidth=2
 
 highlight BadWhitespace ctermbg=red guibg=red
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
